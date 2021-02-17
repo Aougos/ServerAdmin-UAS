@@ -12,8 +12,8 @@
       echo "Table User Database trucorp-web-2.0" . PHP_EOL;
       echo "<table><tr><th>ID</th><th>Nama</th><th>Kantor</th></tr>";
       while($row = $result->fetch_assoc()) {
+	 $user = $user + 1;
          echo "<tr><td>" . $row["ID"]. "</td><td>" . $row["Nama"]. "</td><td>" . $row["Kantor"]. "</td></tr>" . PHP_EOL;
-	 $user = $user+1;
       }
       echo "</table>";
    }else {
